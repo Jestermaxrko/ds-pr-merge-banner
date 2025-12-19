@@ -57,6 +57,7 @@ const showBanner = async () => {
   }, CONFIG.delay + CONFIG.displayDuration + CONFIG.shrinkDelay + CONFIG.fadeOutDuration)
 
   setTimeout(() => {
+    bannerContainer.remove();
     img1.remove();
     img2.remove();
   }, CONFIG.delay + CONFIG.displayDuration + CONFIG.fadeOutDuration + CONFIG.shrinkDelay + CONFIG.fadeOutDuration)

@@ -5,10 +5,16 @@
   "description": "Shows a banner before merging a PR on GitHub",
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": ["https://github.com/*/*/pull/*"],
       "js": ["content.js"],
       "css": ["styles.css"],
       "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["https://github.com/*"]
     }
   ]
 }

@@ -67,6 +67,7 @@ const statusBadge = document.querySelector('[title^="Status"]');
 
 document.addEventListener('click', event => {
 
+  // test
   if (!timers.intervalTimer) {
     const buttonContent = event.target.textContent;
     const isMergeButton = buttonContent.toLowerCase().includes('merge')
